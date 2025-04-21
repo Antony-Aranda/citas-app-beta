@@ -5,6 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "postinstall": "npm rebuild bcrypt --build-from-source",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev1": "source .env; nodemon ...",
@@ -29,7 +30,7 @@
   },
   "homepage": "https://github.com/supuna97/express_js_crud_operation_apis#readme",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
