@@ -1,11 +1,10 @@
 {
-  "name": "express_js_crud_operation_apis",
+  "name": "Proyecto de senati",
   "version": "1.0.0",
-  "description": "NodeJS Express Crud operations REST APIs with MVC Design pattern and Mysql.",
+  "description": "Senati app",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "postinstall": "npm rebuild bcrypt --build-from-source",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev1": "source .env; nodemon ...",
@@ -13,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Antony-Aranda/citas-app-beta"
   },
   "keywords": [
     "nodejs",
@@ -23,12 +22,8 @@
     "nodemon",
     "crud"
   ],
-  "author": "Supun Nanayakkara",
+  "author": "Antony Aranda",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/supuna97/express_js_crud_operation_apis/issues"
-  },
-  "homepage": "https://github.com/supuna97/express_js_crud_operation_apis#readme",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.2",
