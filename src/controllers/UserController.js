@@ -1,6 +1,6 @@
 import user from "../models/user.js";
 import { validationResult } from "express-validator";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 const userController = {
   // Create a new user
