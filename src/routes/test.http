@@ -1,0 +1,63 @@
+GET http://localhost:3000/user
+
+###
+POST  http://localhost:3000/user/create
+Content-Type: application/json
+
+{
+    "nombre": "Medias",
+    "email": "media@gmail.com",
+    "password": "1234",
+    "rol": "cliente"
+}
+
+### cliente
+
+GET http://localhost:3000/cliente
+
+###
+
+POST http://localhost:3000/cliente/create
+Content-Type: application/json
+
+{
+    "nombre": "Lazy",
+    "apellido": "sin padre",
+    "telefono": "123421215",
+    "dni": "7372323",
+    "id_user": 4
+}
+
+### servicios
+
+GET http://localhost:3000/servicio
+
+### terapeutas
+
+GET http://localhost:3000/terapeuta
+
+
+### reservas
+
+GET http://localhost:3000/reserva
+
+### auth
+POST  http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "nombre": "Maria Lopez",
+  "email": "mari@gmail.com",
+  "password": "maria123"
+}
+### login
+POST  http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "mari@gmail.com",
+  "password": "maria123"
+}
+
+###
+GET http://localhost:3000/auth/prueba
