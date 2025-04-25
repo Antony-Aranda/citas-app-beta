@@ -10,6 +10,7 @@ dotenv.config();
 
 import router from "./src/routes/web.js";
 import routerAuth from "./src/routes/auth.js";
+import routerAdmin from "./src/routes/admin.js";
 
 app.use(cookieParser());
 
@@ -28,7 +29,7 @@ app.use(cors()); // Allow all origins (not recommended for production)
 //restringe si el recurso puedes usar en un origen , el navegador pregunta , es verdad que este dominio que no es el tuyo , yo estoy en otro dominio , si este dominio que aloja este recuros , pues el navegador pueda soliccitar
 
 //routes
-app.use("/", router);
+app.use("/", [router, routerAdmin]);
 app.use("/auth", routerAuth);
 
 app.listen(process.env.PORT, () => {

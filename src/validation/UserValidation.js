@@ -18,6 +18,7 @@ export const userValidationRules = () => {
 
     // Validate age
     body("password").notEmpty().withMessage("contraseña vacia"),
+
     body("rol").notEmpty().withMessage("Seleccione un rol"),
   ];
 };
